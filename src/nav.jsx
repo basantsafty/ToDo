@@ -11,7 +11,7 @@ function Navbar() {
 
       {/* Right side: Navigation links */}
       <div className="flex gap-6">
-        <Link to="/" className="text-amber-50 hover:text-amber-600 px-10 text-xl">
+        <Link to="/home" className="text-amber-50 hover:text-amber-600 px-10 text-xl">
           Home
         </Link>
         <Link to="/tasks" className="text-amber-50 hover:text-amber-600 px-10 text-xl">
