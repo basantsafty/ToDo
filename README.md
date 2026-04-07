@@ -1,16 +1,98 @@
-# React + Vite
+# To-Do Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based to-do list application with user authentication, task management, and responsive design.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **User Authentication**: Login and signup functionality with protected routes
+- **Task Management**: Add, delete, and mark tasks as complete
+- **Task Details**: View detailed information about individual tasks
+- **Persistent Storage**: Tasks are saved to localStorage
+- **Responsive Design**: Built with Tailwind CSS for mobile-first design
+- **Form Validation**: Uses Formik and Yup for robust form handling
+- **Routing**: Client-side routing with React Router DOM
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 19
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Routing**: React Router DOM
+- **Forms**: Formik with Yup validation
+- **Deployment**: GitHub Pages
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd todoproject
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Available Scripts
+
+- `npm run dev` - Start the development server
+- `npm run build` - Build the project for production
+- `npm run preview` - Preview the production build locally
+- `npm run lint` - Run ESLint for code linting
+- `npm run deploy` - Deploy to GitHub Pages (requires build first)
+
+## Usage
+
+1. **Sign Up/Login**: Create an account or log in to access the app
+2. **Home**: Navigate to the home page
+3. **Tasks**: View and manage your to-do list
+   - Add new tasks
+   - Mark tasks as complete/incomplete
+   - Delete tasks
+   - Click on tasks to view details
+4. **Profile**: Access your user profile
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── btn.jsx
+│   ├── card.jsx
+│   ├── guard.jsx
+│   └── nav.jsx
+├── pages/
+│   ├── home.jsx
+│   ├── login.jsx
+│   ├── profile.jsx
+│   ├── signup.jsx
+│   ├── taskDetails.jsx
+│   └── tasks.jsx
+├── myContext/
+│   ├── authProvider.jsx
+│   └── context.js
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## Deployment
+
+The project is configured for deployment to GitHub Pages:
+
+1. Build the project: `npm run build`
+2. Deploy: `npm run deploy`
+
+The `predeploy` script automatically runs the build before deployment.
+
+## Contributing
+
+This is a lab project for learning React development. Feel free to explore and modify the code for educational purposes.
