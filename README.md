@@ -2,6 +2,7 @@
 
 A modern React-based to-do list application with user authentication, task management, and responsive design.
 
+
 ## Features
 
 - **User Authentication**: Login and signup functionality with protected routes
@@ -85,13 +86,8 @@ src/
 ```
 
 ## Deployment
+[![Deploy with Vercel](https://vercel.com/button)](https://to-do-beta-three-73.vercel.app)
 
-The project is configured for deployment to GitHub Pages:
-
-1. Build the project: `npm run build`
-2. Deploy: `npm run deploy`
-
-The `predeploy` script automatically runs the build before deployment.
 
 ## Contributing
 
